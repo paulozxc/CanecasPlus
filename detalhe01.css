@@ -1,0 +1,40 @@
+body {
+    background-image: url(Imagem/niver/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+}
+
+@font-face {
+    font-family: 'FonteNova';
+    src: url('Gold\ Lines\ Trial.otf') format(opentype);
+}
+
+h1{
+    font-family: 'FonteNova';
+    font-size: 3em;
+}
+
+h2{
+    font-size: 3em;
+
+}
+
+p{
+    font-size: 2em;
+
+}

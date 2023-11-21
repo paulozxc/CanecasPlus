@@ -1,0 +1,35 @@
+body {
+    background-image: url(Fundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+
+}
+
+h2{
+    font-size: 3em;
+
+}
+
+
+p{
+    font-size: 2em;
+
+}
+
+.right-align{
+    text-align: right;
+}

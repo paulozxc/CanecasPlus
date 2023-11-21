@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canecas com charme</title>
+    <link rel="stylesheet" href="detalhe01.css">
+    <link rel="shortcut icon" href="canecalogo.png" type="image/x-icon">
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+                background-color: #050505; /* Cor de fundo preta */
+                padding: 14.06px; /* Tamanho ajustado da barra (aumentado em 75%) */
+                position: fixed;
+                width: 100%;
+                top: 0;
+                display: flex;
+                align-items: center;
+                color: white; /* Cor do texto */
+                overflow: hidden; /* Para esconder a barra branca ao clicar no menu hamburguer */
+            }
+    
+            .company-name {
+                font-size: 1.75em; /* Tamanho ajustado do nome da empresa (aumentado em 75%) */
+                flex-grow: 1; /* Ocupa o espaço disponível restante */
+                text-align: center; /* Alinha o texto ao centro */
+            }
+    
+            .menu-icon {
+                cursor: pointer;
+                font-size: 1.875em; /* Tamanho ajustado do ícone do menu hamburguer (aumentado em 75%) */
+                color: white;
+            }
+    
+            .menu-content {
+                display: none;
+                flex-direction: column;
+                box-shadow: 1px 2px 4px grey;
+                background:rgba (2, 2, 2, 0.2); /*Cor de fundo preta para o sub-menu */
+                position: fixed;
+                top: 66.75px; /* Distância ajustada do topo (mínima) (aumentado em 75%) */
+                width: 25%;
+                padding: 14.06px; /* Tamanho ajustado do sub-menu (aumentado em 75%) */
+                box-sizing: border-box;
+                align-items: center; /* Alinha os subitens ao centro */
+                transition: .10s;
+                backdrop-filter: blur (5px);
+            }
+    
+            .submenu-item {
+                color: white;
+                
+                cursor: pointer;
+                font-size: 1.25em; /* Tamanho ajustado da fonte dos subitens (aumentado em 75%) */
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center; /* Centraliza o texto */
+            }
+    
+            .submenu-item a {
+                text-decoration: none;
+                color: rgb(2, 2, 2);
+                display: block; /* Ocupa a largura total disponível */
+                padding: 18.75px 0; /* Adiciona espaçamento ao redor do texto (aumentado em 75%) */
+                font-weight: bold;
+            }
+    
+            .menu-icon:hover,
+            .submenu-item:hover { background: rgba(2,2,2, 0.2);
+                
+               
+               /* background-color: #333; Fundo cinza claro ao passar o mouse */
+            }
+    
+            .company-logo {
+                margin-right: 13.125px; /* Espaçamento à direita da imagem (aumentado em 75%) */
+                margin-left: 13.125px; /* Adiciona um espaçamento à esquerda da imagem (aumentado em 75%) */
+                max-width: 33.75px; /* Largura máxima da imagem (aumentado em 75%) */
+                height: auto; /* Altura automática proporcional à largura */
+            }
+      
+      @font-face {
+          font-family: 'FonteNova';
+          src: url('Gold\ Lines\ Trial.otf') format(opentype);
+      }
+
+      h1, .company-name {
+          font-family: 'FonteNova';
+      }
+  </style>
+</head>
+<body>
+
+<div class="navbar" onclick="hideMenu()">
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <div class="company-name">Canecas com Charme</div>
+  <img src="canecalogo.png" alt="Logo da Empresa" class="company-logo">
+</div>
+
+<div class="menu-content" id="menuContent">
+  <div class="submenu-item"><a href="index.html">Tela inicial</a></div>
+  <div class="submenu-item"><a href="index3.html">Sobre nós</a></div>
+  <div class="submenu-item"><a href="index4.html">Fale conosco</a></div>
+  <div class="submenu-item"><a href="index2.5.html">Caneca mais vendida</a></div>
+</div>
+
+<script>
+  function toggleMenu() {
+      var menuContent = document.getElementById("menuContent");
+      menuContent.style.display = (menuContent.style.display === "flex" || menuContent.style.display === "") ? "none" : "flex";
+  }
+
+  document.addEventListener("click", function(event) {
+      var menuContent = document.getElementById("menuContent");
+      if (!event.target.closest('.navbar') && menuContent.style.display === "flex") {
+          menuContent.style.display = "none";
+      }
+  });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><!-- link no botão Home  -->
+    <center>   <a href="index.html"> <img src="canecalogo.png" alt="Logo"  > </a></center>
+    <center><H1>Canecas com Charme</H1></center>
+    <br>
+    <br>
+    <br>
+    
+    <Ul>
+      <div style="width: 600px;">
+        <center><H2>CANECA PERSONALIZADAS DE ANIVERSÁRIO</H2></center>
+        <br>
+        <center><p>PRODUTO MAIS VENDIDO</p></center>
+        <br>
+        <center><img src="Estrelas.png" alt="300"></center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+          <a href="index2.html">
+               <!--   <center><img src="VER_DETALHES.png" alt="VerDetalhes" style="width: 300px;"></center> --> 
+          </a>
+        </div>
+      </div>
+      <li>
+        <img src="Imagem/niver/canecaNiver7.png" alt="400" style="width: 400px;">
+      </li>
+    </Ul>
+</body>
+</html>
